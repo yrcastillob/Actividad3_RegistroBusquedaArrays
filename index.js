@@ -8,7 +8,7 @@ var espacioMensajeOperacion = document.getElementById("contenedorrepuesta");
 var botonVaciarDatos = document.getElementById("botonVaciarDatos");
 var espacioRestuladoBorrado = document.getElementById("resultadoBorradoInformación");
 let arrayPersonas = [];
-
+localStorage.setItem("arrayPersonas", JSON.stringify(arrayPersonas));
 
 /// FUNCIÓN VERIFICAR QUE UNA CÉDULA SEA ÚNICA
 var verificarCedulaUnica = function(cedula) {
